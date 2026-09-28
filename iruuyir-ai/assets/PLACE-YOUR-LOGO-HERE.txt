@@ -1,0 +1,5 @@
+Copy your logo into this folder and name it exactly:   logo.png
+
+Every page (common index, healthcare-worker portal, patient portal) loads  assets/logo.png
+automatically and also uses it as the browser-tab icon. Nothing else needs to be edited.
+Tip: a square PNG with a transparent background, at least 256x256 px, looks best.

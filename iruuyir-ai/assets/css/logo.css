@@ -1,0 +1,20 @@
+/* ===== IruUyir logo slot (used by every page in both portals) =====
+   Put your logo at  assets/logo.png  - it fills the slot automatically.
+   The slot has a fixed size and object-fit:contain, so the logo is never stretched,
+   never overflows and never overlaps the brand name, navbar or login card.
+   If the file is missing, the dashed "LOGO" box stays as a placeholder. */
+.logo-placeholder{position:relative;flex:none;overflow:hidden}
+.logo-placeholder img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:1px;opacity:0;transition:opacity .25s}
+.logo-placeholder.has-logo{border-color:transparent;background:transparent}
+.logo-placeholder.has-logo img{opacity:1}
+.logo-placeholder.has-logo .logo-fallback{display:none}
+.logo-placeholder .logo-fallback{text-align:center;line-height:1.2}
+
+/* Slightly roomier slots for the healthcare-worker portal (its default box is small) */
+.nav-left .logo-placeholder{width:44px;height:44px}
+.auth-brand .logo-placeholder{width:150px;height:150px}
+.logo-hero{width: 96px !important;
+    height: 96px !important;
+    margin: 0 auto 16px !important;
+    font-size:12px!important
+   }
